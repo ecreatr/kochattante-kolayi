@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<!--
+  ╔══════════════════════════════════════════════════════════════╗
+  ║   KOCHATTANTE KOLAYI (KoKo) — Static Website                ║
+  ║   Pustaka Gramam, Kottarakara, Kerala                        ║
+  ╠══════════════════════════════════════════════════════════════╣
+  ║   FREE HOSTING OPTIONS                                       ║
+  ║                                                              ║
+  ║   1. GitHub Pages (Recommended for static sites)            ║
+  ║      → Push to a repo, enable Pages in Settings             ║
+  ║      → yourname.github.io/koko                              ║
+  ║      → https://pages.github.com                             ║
+  ║                                                              ║
+  ║   2. Cloudflare Pages (Fastest CDN globally, generous free) ║
+  ║      → Drag & drop or connect GitHub repo                   ║
+  ║      → https://pages.cloudflare.com                         ║
+  ║                                                              ║
+  ║   3. Netlify (Easiest drag-and-drop deploy)                  ║
+  ║      → Drop folder at app.netlify.com/drop                  ║
+  ║      → https://netlify.com                                   ║
+  ║                                                              ║
+  ║   4. Zoho Sites (No-code management, good for non-tech)     ║
+  ║      → https://www.zoho.com/sites                           ║
+  ╚══════════════════════════════════════════════════════════════╝
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Kochattante Kolayi (KoKo) — An agri-tourism experience in Pustaka Gramam village, near Kottarakara, Kerala. Village walks, farm-to-table cooking, craft workshops, nature trails and seasonal harvests. Opening soon." />
+  <meta name="keywords" content="KoKo, Kochattante Kolayi, agri-tourism, Kerala, Kottarakara, Pustaka Gramam, village experience, farm tourism" />
+  <meta property="og:title" content="KoKo — Kochattante Kolayi | Coming Soon" />
+  <meta property="og:description" content="A Kerala village agri-tourism experience opening in Pustaka Gramam, Kottarakara. Where village life blooms." />
+  <meta property="og:image" content="./img/kochattan-thumpsup.jpeg" />
+  <meta property="og:type" content="website" />
+  <title>KoKo — Kochattante Kolayi | Coming Soon</title>
+  <link rel="stylesheet" href="./css/style.css" />
+  <!-- Inline SVG favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%233d6b45'/><text y='.9em' font-size='72' x='10' fill='%23fdf8f0' font-family='serif' font-weight='bold'>K</text></svg>" />
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════════
+       NAVIGATION
+  ══════════════════════════════════════════ -->
+  <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+    <div class="container nav-inner">
+      <a href="#hero" class="nav-logo" aria-label="KoKo Home">KoKo</a>
+      <ul class="nav-links" id="nav-links" role="list">
+        <li><a href="#about">The Farm</a></li>
+        <li><a href="#expect">Experiences</a></li>
+        <li><a href="#village">Village Life</a></li>
+        <li><a href="#location">Visit Us</a></li>
+      </ul>
+      <button class="nav-hamburger" id="nav-hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ══════════════════════════════════════════
+       1. HERO
+  ══════════════════════════════════════════ -->
+  <section class="hero" id="hero" aria-label="Hero">
+
+    <!-- Topography texture background -->
+    <div class="hero-bg" role="presentation" aria-hidden="true"></div>
+    <div class="hero-overlay" role="presentation" aria-hidden="true"></div>
+
+    <div class="container">
+      <div class="hero-content">
+
+        <!-- Text side -->
+        <div class="hero-text">
+          <h1 class="hero-koko-name">KoKo</h1>
+          <p class="hero-koko-full">Kochattante Kolayi</p>
+
+          <p class="hero-tagline-en">A living canvas of nature &amp; nostalgia, rooted in Kerala's timeless agricultural heritage.</p>
+
+          <div class="hero-location">
+            <!-- Pin icon -->
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+              <circle cx="12" cy="10" r="3"/>
+            </svg>
+            Pustaka Gramam, Kottarakara, Kerala
+          </div>
+        </div>
+
+        <!-- Mascot side -->
+        <div class="hero-mascot">
+          <img
+            src="./img/kochattan-thumpsup.jpeg"
+            alt="Kochattan, our friendly village guide, giving a thumbs-up. He wears a white thorthu on his head and a blue checked lungi."
+            width="340"
+            height="340"
+          />
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Wavy divider -->
+    <div class="wavy-divider" aria-hidden="true">
+      <svg viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+        <path d="M0,30 C240,60 480,0 720,30 C960,60 1200,0 1440,30 L1440,60 L0,60 Z" fill="#c8dff0"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       2. ABOUT THE FARM
+  ══════════════════════════════════════════ -->
+  <section class="about" id="about" aria-label="About the Farm">
+    <div class="container">
+      <div class="grid-2">
+
+        <!-- Text column -->
+        <div class="about-text reveal">
+          <span class="section-label">About the Farm</span>
+          <h2 class="section-title">A Living Piece of Kerala Village Life</h2>
+          <p class="section-subtitle">
+            Nestled in the lush folds of Pustaka Gramam — "the village of books" —
+            just a short drive from Kottarakara town, KoKo is a working farm
+            rooted in the rhythms of traditional Kerala agriculture.
+          </p>
+          <p style="color:var(--text-medium); font-size:0.95rem; margin-bottom:1.5rem; line-height:1.8;">
+            Here, banana groves rustle in the afternoon breeze, pepper vines climb
+            ancient trees, and papaya gardens glow golden at harvest time. Our dream
+            is simple: to invite you to slow down, get your feet muddy, and
+            experience the warmth of village life — the way it has always been.
+          </p>
+          <p style="color:var(--text-medium); font-size:0.95rem; margin-bottom:2rem; line-height:1.8;">
+            Kochattan — our resident village elder and your guide — knows every
+            corner of this land and every story it holds. He can't wait to show you around.
+          </p>
+
+          <div class="about-facts">
+            <div class="fact-chip"><span>🌿</span> Banana &amp; Papaya Groves</div>
+            <div class="fact-chip"><span>🌶️</span> Pepper &amp; Spice Gardens</div>
+            <div class="fact-chip"><span>💧</span> Padavela — The Farm Pond</div>
+            <div class="fact-chip"><span>🏡</span> Heritage Cottage &amp; Mandvi</div>
+            <div class="fact-chip"><span>🚲</span> Cycling &amp; Nature Trails</div>
+            <div class="fact-chip"><span>📍</span> Near Kottarakara Town</div>
+          </div>
+        </div>
+
+        <!-- Visuals column -->
+        <div class="about-visuals reveal">
+          <div class="about-map-card">
+            <img
+              src="./img/KoKo-Topography.jpeg"
+              alt="KoKo farm topography map showing the layout of Padavela pond, banana farms, papaya farm, pepper farm, cottage, and other features."
+              loading="lazy"
+              width="600"
+              height="450"
+            />
+            <div class="about-map-caption">KoKo Farm Layout · Pustaka Gramam</div>
+          </div>
+          <div class="about-mascot-lean">
+            <img
+              src="./img/kochattan.jpg"
+              alt="Kochattan — our friendly village elder mascot — standing casually, wearing a blue checked lungi and white banian with a thorthu tied on his head."
+              loading="lazy"
+              style="max-height:280px; object-fit:contain; margin:0 auto;"
+            />
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="wavy-divider" aria-hidden="true">
+      <svg viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+        <path d="M0,0 C360,60 720,0 1080,40 C1260,60 1380,20 1440,0 L1440,60 L0,60 Z" fill="#fdf8f0"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       3. WHAT TO EXPECT
+  ══════════════════════════════════════════ -->
+  <section class="expect" id="expect" aria-label="What to Expect">
+    <div class="container">
+      <div class="expect-header reveal">
+        <span class="section-label">What to Expect</span>
+        <h2 class="section-title">Experiences That Stay With You</h2>
+        <p class="section-subtitle">
+          Every visit to KoKo is an invitation to live the village — not just visit it.
+          Here's a glimpse of what Kochattan has planned for you.
+        </p>
+      </div>
+
+      <div class="icon-grid">
+
+        <!-- 1. Village Walks -->
+        <div class="icon-card reveal">
+          <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <!-- Coconut tree icon -->
+            <g stroke="#2c2c1e" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none">
+              <!-- Trunk -->
+              <path d="M40 70 Q38 55 40 40 Q42 28 40 18" stroke-width="3"/>
+              <!-- Fronds -->
+              <path d="M40 20 Q28 10 18 14" fill="#8fbc8f" stroke="#3d6b45"/>
+              <path d="M40 20 Q52 8 62 12" fill="#8fbc8f" stroke="#3d6b45"/>
+              <path d="M40 22 Q25 18 20 28" fill="#8fbc8f" stroke="#3d6b45"/>
+              <path d="M40 22 Q56 18 62 28" fill="#8fbc8f" stroke="#3d6b45"/>
+              <path d="M40 24 Q36 36 30 38" fill="#8fbc8f" stroke="#3d6b45"/>
+              <path d="M40 24 Q46 36 52 38" fill="#8fbc8f" stroke="#3d6b45"/>
+              <!-- Coconuts -->
+              <circle cx="36" cy="26" r="3" fill="#c8853a" stroke="#8b6914"/>
+              <circle cx="44" cy="25" r="3" fill="#c8853a" stroke="#8b6914"/>
+              <!-- Ground -->
+              <path d="M30 70 Q40 66 50 70" stroke="#8fbc8f"/>
+            </g>
+          </svg>
+          <h3>Village Walks</h3>
+          <p>Wander through coconut groves, banana gardens, and winding farm paths with Kochattan as guide.</p>
+        </div>
+
+        <!-- 2. Farm-to-Table Cooking -->
+        <div class="icon-card reveal">
+          <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <!-- Kerala clay pot / cooking icon -->
+            <g stroke="#2c2c1e" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <!-- Pot body -->
+              <path d="M24 42 Q22 60 40 62 Q58 60 56 42 Z" fill="#c8853a" stroke="#8b6914"/>
+              <!-- Pot rim -->
+              <ellipse cx="40" cy="42" rx="18" ry="5" fill="#e8a85a" stroke="#8b6914"/>
+              <!-- Handle left -->
+              <path d="M22 48 Q14 48 14 42 Q14 36 22 38" fill="none" stroke="#8b6914" stroke-width="3"/>
+              <!-- Handle right -->
+              <path d="M58 48 Q66 48 66 42 Q66 36 58 38" fill="none" stroke="#8b6914" stroke-width="3"/>
+              <!-- Steam -->
+              <path d="M34 36 Q32 30 34 24" fill="none" stroke="#b8d4b8" stroke-width="2" stroke-dasharray="3 2"/>
+              <path d="M40 34 Q38 27 40 20" fill="none" stroke="#b8d4b8" stroke-width="2" stroke-dasharray="3 2"/>
+              <path d="M46 36 Q48 30 46 24" fill="none" stroke="#b8d4b8" stroke-width="2" stroke-dasharray="3 2"/>
+              <!-- Banana leaf underneath (subtle) -->
+              <path d="M20 62 Q40 66 60 62" fill="none" stroke="#8fbc8f" stroke-width="2"/>
+            </g>
+          </svg>
+          <h3>Farm-to-Table Cooking</h3>
+          <p>Cook a Kerala meal using ingredients picked fresh from the farm — banana, pepper, coconut, and more.</p>
+        </div>
+
+        <!-- 3. Craft Workshops -->
+        <div class="icon-card reveal">
+          <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <!-- Coir weaving / craft icon -->
+            <g stroke="#2c2c1e" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none">
+              <!-- Loom frame -->
+              <rect x="20" y="18" width="40" height="44" rx="3" stroke="#8b6914" fill="#fef5e4"/>
+              <!-- Warp threads (vertical) -->
+              <line x1="27" y1="18" x2="27" y2="62" stroke="#c8853a" stroke-width="1.5"/>
+              <line x1="33" y1="18" x2="33" y2="62" stroke="#c8853a" stroke-width="1.5"/>
+              <line x1="40" y1="18" x2="40" y2="62" stroke="#c8853a" stroke-width="1.5"/>
+              <line x1="47" y1="18" x2="47" y2="62" stroke="#c8853a" stroke-width="1.5"/>
+              <line x1="53" y1="18" x2="53" y2="62" stroke="#c8853a" stroke-width="1.5"/>
+              <!-- Weft threads (horizontal, woven) -->
+              <path d="M20 28 Q27 26 33 28 Q40 30 47 28 Q53 26 60 28" stroke="#8fbc8f" stroke-width="2" fill="none"/>
+              <path d="M20 35 Q27 37 33 35 Q40 33 47 35 Q53 37 60 35" stroke="#8fbc8f" stroke-width="2" fill="none"/>
+              <path d="M20 42 Q27 40 33 42 Q40 44 47 42 Q53 40 60 42" stroke="#8fbc8f" stroke-width="2" fill="none"/>
+              <path d="M20 49 Q27 51 33 49 Q40 47 47 49 Q53 51 60 49" stroke="#8fbc8f" stroke-width="2" fill="none"/>
+            </g>
+          </svg>
+          <h3>Craft Workshops</h3>
+          <p>Coir weaving, clay pottery, leaf-art, and traditional Kerala crafts — hands-on village skills.</p>
+        </div>
+
+        <!-- 4. Nature Trails -->
+        <div class="icon-card reveal">
+          <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <!-- Lotus icon -->
+            <g stroke="#2c2c1e" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <!-- Water ripple -->
+              <ellipse cx="40" cy="62" rx="22" ry="5" fill="#c8dff0" stroke="#7aaed0"/>
+              <!-- Stem -->
+              <path d="M40 62 Q40 52 40 46" fill="none" stroke="#8fbc8f" stroke-width="2.5"/>
+              <!-- Leaves -->
+              <path d="M40 54 Q30 48 22 52 Q28 56 40 54Z" fill="#8fbc8f" stroke="#3d6b45" stroke-width="1.5"/>
+              <path d="M40 54 Q50 48 58 52 Q52 56 40 54Z" fill="#8fbc8f" stroke="#3d6b45" stroke-width="1.5"/>
+              <!-- Petals outer -->
+              <path d="M40 46 Q34 36 32 26 Q40 32 40 46Z" fill="#fef5e4" stroke="#c1614f" stroke-width="1.5"/>
+              <path d="M40 46 Q46 36 48 26 Q40 32 40 46Z" fill="#fef5e4" stroke="#c1614f" stroke-width="1.5"/>
+              <path d="M40 46 Q26 38 22 30 Q34 34 40 46Z" fill="#fef5e4" stroke="#c1614f" stroke-width="1.5"/>
+              <path d="M40 46 Q54 38 58 30 Q46 34 40 46Z" fill="#fef5e4" stroke="#c1614f" stroke-width="1.5"/>
+              <!-- Centre petal -->
+              <path d="M40 46 Q36 32 40 20 Q44 32 40 46Z" fill="#e08070" stroke="#c1614f" stroke-width="1.5"/>
+            </g>
+          </svg>
+          <h3>Nature Trails</h3>
+          <p>Wander along the Padavela pond, through spice gardens, and into the quiet heart of Pustaka Gramam.</p>
+        </div>
+
+        <!-- 5. Seasonal Harvests (paddy is one of many) -->
+        <div class="icon-card reveal">
+          <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <!-- Banana bunch icon -->
+            <g stroke="#2c2c1e" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <!-- Stem -->
+              <path d="M40 14 Q42 28 40 40" fill="none" stroke="#8b6914" stroke-width="3"/>
+              <!-- Bunch hands -->
+              <path d="M40 22 Q30 18 24 22 Q26 30 40 28 Z" fill="#c8c832" stroke="#8b6914" stroke-width="1.5"/>
+              <path d="M40 30 Q28 26 22 31 Q25 38 40 36 Z" fill="#e8c820" stroke="#8b6914" stroke-width="1.5"/>
+              <path d="M40 38 Q30 34 26 40 Q30 46 40 44 Z" fill="#f0d030" stroke="#8b6914" stroke-width="1.5"/>
+              <!-- Flower -->
+              <ellipse cx="40" cy="50" rx="6" ry="4" fill="#c1614f" stroke="#8b4040" stroke-width="1.5"/>
+              <path d="M38 50 Q34 56 34 62" fill="none" stroke="#8b4040" stroke-width="1.5"/>
+              <path d="M42 50 Q46 56 46 62" fill="none" stroke="#8b4040" stroke-width="1.5"/>
+              <!-- Leaf -->
+              <path d="M50 20 Q60 12 66 16 Q62 26 50 20Z" fill="#8fbc8f" stroke="#3d6b45" stroke-width="1.5"/>
+            </g>
+          </svg>
+          <h3>Seasonal Harvests</h3>
+          <p>Join banana picking, papaya harvest, pepper collection, and experience the joy of farm bounty.</p>
+        </div>
+
+        <!-- 6. Cycling with Kochattan -->
+        <div class="icon-card cycling-card reveal">
+          <div class="cycling-mascot-wrap">
+            <img
+              src="./img/kochattan-cycling.png"
+              alt="Kochattan cycling through the farm fields"
+              loading="lazy"
+            />
+          </div>
+          <h3>Cycling Tours</h3>
+          <p>Pedal along with Kochattan on a guided cycle tour through village lanes and farm boundaries.</p>
+        </div>
+
+        <!-- 7. Cultural Evenings -->
+        <div class="icon-card reveal">
+          <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <!-- Kerala lamp (Nilavilakku) icon -->
+            <g stroke="#2c2c1e" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <!-- Base disc -->
+              <ellipse cx="40" cy="66" rx="14" ry="4" fill="#c8853a" stroke="#8b6914"/>
+              <!-- Stand -->
+              <path d="M40 62 L40 40" stroke="#c8853a" stroke-width="4"/>
+              <ellipse cx="40" cy="42" rx="6" ry="2.5" fill="#c8853a" stroke="#8b6914"/>
+              <!-- Main bowl -->
+              <path d="M26 36 Q26 28 40 28 Q54 28 54 36 Q54 40 40 42 Q26 40 26 36Z" fill="#e8a85a" stroke="#8b6914"/>
+              <!-- Wicks -->
+              <path d="M40 28 Q40 22 38 16" fill="none" stroke="#8b6914" stroke-width="2"/>
+              <path d="M40 28 Q44 24 50 20" fill="none" stroke="#8b6914" stroke-width="2"/>
+              <path d="M40 28 Q36 24 30 20" fill="none" stroke="#8b6914" stroke-width="2"/>
+              <!-- Flames -->
+              <path d="M38 16 Q36 10 38 6 Q42 10 38 16Z" fill="#f0a030" stroke="#c8853a" stroke-width="1"/>
+              <path d="M50 20 Q48 14 50 10 Q54 14 50 20Z" fill="#f0a030" stroke="#c8853a" stroke-width="1"/>
+              <path d="M30 20 Q28 14 30 10 Q34 14 30 20Z" fill="#f0a030" stroke="#c8853a" stroke-width="1"/>
+            </g>
+          </svg>
+          <h3>Cultural Evenings</h3>
+          <p>Onam sadhya, Vishu celebrations, traditional games, folk music, and starlit storytelling sessions.</p>
+        </div>
+
+        <!-- 8. Bullock Cart Rides -->
+        <div class="icon-card reveal">
+          <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <!-- Bullock cart icon -->
+            <g stroke="#2c2c1e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+              <!-- Cart body -->
+              <rect x="32" y="28" width="34" height="18" rx="3" fill="#e8a85a" stroke="#8b6914" stroke-width="2.5"/>
+              <!-- Cart wheel right -->
+              <circle cx="58" cy="50" r="10" fill="#fdf8f0" stroke="#8b6914" stroke-width="2.5"/>
+              <circle cx="58" cy="50" r="3" fill="#8b6914"/>
+              <line x1="58" y1="40" x2="58" y2="60" stroke="#8b6914" stroke-width="1.5"/>
+              <line x1="48" y1="50" x2="68" y2="50" stroke="#8b6914" stroke-width="1.5"/>
+              <!-- Shaft -->
+              <path d="M32 38 L14 42" stroke="#8b6914" stroke-width="2.5"/>
+              <path d="M32 42 L14 42" stroke="#8b6914" stroke-width="2"/>
+              <!-- Bullock body -->
+              <ellipse cx="10" cy="38" rx="10" ry="7" fill="#d4a878" stroke="#8b6914" stroke-width="2"/>
+              <!-- Bullock head -->
+              <circle cx="18" cy="32" r="6" fill="#d4a878" stroke="#8b6914" stroke-width="2"/>
+              <!-- Horn -->
+              <path d="M16 28 Q14 22 12 24" stroke="#8b6914" stroke-width="1.5"/>
+              <path d="M20 28 Q22 22 24 24" stroke="#8b6914" stroke-width="1.5"/>
+              <!-- Nose ring -->
+              <circle cx="20" cy="34" r="1.5" fill="#c8853a"/>
+              <!-- Tail -->
+              <path d="M2 40 Q-2 44 2 48" stroke="#8b6914" stroke-width="1.5"/>
+              <!-- Legs -->
+              <line x1="6"  y1="44" x2="6"  y2="56" stroke="#8b6914" stroke-width="2"/>
+              <line x1="12" y1="44" x2="12" y2="56" stroke="#8b6914" stroke-width="2"/>
+              <!-- Ground line -->
+              <path d="M0 58 Q40 56 80 58" stroke="#8fbc8f" stroke-width="1.5"/>
+            </g>
+          </svg>
+          <h3>Bullock Cart Rides</h3>
+          <p>Rumble through the farm on a traditional bullock cart — a ride that takes you back in time.</p>
+        </div>
+
+      </div><!-- /icon-grid -->
+    </div>
+
+    <div class="wavy-divider" aria-hidden="true">
+      <svg viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+        <path d="M0,40 C480,0 960,60 1440,20 L1440,60 L0,60 Z" fill="#fef5e4"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       4. THE VILLAGE FEEL
+  ══════════════════════════════════════════ -->
+  <section class="village" id="village" aria-label="The Village Feel">
+    <div class="container">
+      <div class="village-header reveal">
+        <span class="section-label">The Village Feel</span>
+        <h2 class="section-title">Rooted in Kerala Tradition</h2>
+        <p class="section-subtitle">
+          KoKo is not just a farm — it's a living celebration of Kerala's village
+          culture, seasons, and soul.
+        </p>
+      </div>
+
+      <!-- Cultural cards grid -->
+      <div class="village-grid">
+
+        <div class="village-card reveal">
+          <div class="village-card-icon" aria-hidden="true">🌸</div>
+          <div class="village-card-body">
+            <h3>Onam Festivities</h3>
+            <p>Celebrate the harvest festival with a grand sadhya on banana leaves, pookalam designs, Thiruvathira, and traditional games in the open village air.</p>
+          </div>
+        </div>
+
+        <div class="village-card reveal">
+          <div class="village-card-icon" aria-hidden="true">☀️</div>
+          <div class="village-card-body">
+            <h3>Vishu & New Beginnings</h3>
+            <p>Welcome the Malayalam New Year with a Vishukkani — the auspicious first sight of gold, fruits, and flowers arranged at dawn on the farm.</p>
+          </div>
+        </div>
+
+        <div class="village-card reveal">
+          <div class="village-card-icon" aria-hidden="true">🎯</div>
+          <div class="village-card-body">
+            <h3>Traditional Games</h3>
+            <p>Kalari warm-ups, kambadakali, uriyadi, and tug-of-war under the shade of old mango trees. Village games the whole family can join.</p>
+          </div>
+        </div>
+
+        <div class="village-card reveal">
+          <div class="village-card-icon" aria-hidden="true">🍃</div>
+          <div class="village-card-body">
+            <h3>Local Food & Flavours</h3>
+            <p>Kanji with pappadom, chakka curry, nadan beef fry, puttu-kadala, and fresh toddy coconut served straight from the farm — real Kerala food.</p>
+          </div>
+        </div>
+
+      </div><!-- /village-grid -->
+
+      <!-- Entrance gate image -->
+      <div class="village-entrance reveal">
+        <img
+          src="./img/KoKo-entrace.jpeg"
+          alt="A beautiful pencil sketch of the KoKo farm entrance gate — rustic wooden posts with a thatched roof and the name 'KOCHATTANTE KOLAYI' carved on a wooden board."
+          loading="lazy"
+          width="700"
+          height="480"
+        />
+        <div class="village-entrance-caption">
+          The Gate That Welcomes You · Kochattante Kolayi
+        </div>
+      </div>
+
+      <!-- Kochattan quote -->
+      <div class="village-kochattan reveal">
+        <img
+          src="./img/kochattan-thumpsup.jpeg"
+          alt="Kochattan giving thumbs up"
+          loading="lazy"
+          style="max-height:160px; object-fit:contain;"
+        />
+        <blockquote>
+          "Come with muddy feet, leave with a full heart.
+           That is the promise of Pustaka Gramam."
+          <cite>— Kochattan</cite>
+        </blockquote>
+      </div>
+
+    </div>
+
+    <div class="wavy-divider" aria-hidden="true">
+      <svg viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+        <path d="M0,20 C360,60 1080,0 1440,40 L1440,60 L0,60 Z" fill="#e8f4e8"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       5. LOCATION & CONTACT
+  ══════════════════════════════════════════ -->
+  <section class="location" id="location" aria-label="Location and Contact">
+    <div class="container">
+      <div class="text-center reveal" style="margin-bottom:3rem;">
+        <span class="section-label">Visit Us</span>
+        <h2 class="section-title">Find Your Way to KoKo</h2>
+        <p class="section-subtitle" style="margin:0 auto;">
+          Pustaka Gramam is a quiet village near Kottarakara town in Kollam district,
+          Kerala. The farm is easy to reach — and we'll share detailed directions closer
+          to opening day.
+        </p>
+      </div>
+
+      <div class="location-inner">
+
+        <!-- Map -->
+        <div class="reveal">
+          <div class="map-container">
+            <iframe
+              title="KoKo location — Pustaka Gramam, Kottarakara, Kerala"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63066.14427657716!2d76.85821193026123!3d9.005893!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b0602f5faad8b89%3A0xaf91dd0d46e45b3c!2sKottarakara%2C%20Kerala%20691531!5e0!3m2!1sen!2sin!4v1708900000000!5m2!1sen!2sin"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <p style="font-size:0.82rem; color:var(--text-light); margin-top:0.75rem; text-align:center;">
+            📍 Pustaka Gramam, Kottarakara, Kollam District, Kerala — 691531
+          </p>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="reveal">
+          <h3 style="font-family:var(--font-display); font-size:1.5rem; color:var(--ochre); margin-bottom:0.5rem;">
+            Reach Out to Kochattan
+          </h3>
+          <p style="font-size:0.9rem; color:var(--text-medium); margin-bottom:1.5rem;">
+            Interested in an early visit, collaboration, or just want to say hello?
+            Drop us a message and we'll get back to you.
+          </p>
+
+          <form class="contact-form" id="contact-form" novalidate>
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" placeholder="e.g. Rajan Nair" required autocomplete="name" />
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required autocomplete="email" />
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone (optional)</label>
+              <input type="tel" id="phone" name="phone" placeholder="+91 98765 43210" autocomplete="tel" />
+            </div>
+            <div class="form-group">
+              <label for="interest">I'm interested in…</label>
+              <select id="interest" name="interest">
+                <option value="">Select an interest</option>
+                <option>Day visit / Farm tour</option>
+                <option>Farm-to-table cooking experience</option>
+                <option>Cycling &amp; nature trails</option>
+                <option>Group booking / School visit</option>
+                <option>Onam / Vishu celebrations</option>
+                <option>Collaboration / Partnership</option>
+                <option>Just saying hi!</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Tell us what you have in mind…"></textarea>
+            </div>
+            <button type="submit" class="btn-submit">Send Message 🌿</button>
+          </form>
+
+          <!-- Success message (hidden by default) -->
+          <div
+            id="form-success"
+            hidden
+            role="alert"
+            style="margin-top:1.25rem; padding:1rem 1.25rem; background:var(--sage-pale); border:1.5px solid var(--sage); border-radius:var(--radius-sm); color:var(--sage-dark); font-size:0.95rem;"
+          >
+            ✅ <strong>Thank you!</strong> Kochattan has your message and will be in touch soon.
+          </div>
+
+          <!-- Social links -->
+          <div class="social-links" style="margin-top:2rem;">
+            <a href="https://www.instagram.com/kochattantekolayi/" class="social-link" aria-label="KoKo on Instagram" rel="noopener noreferrer" target="_blank">
+              <!-- Instagram icon -->
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                <circle cx="12" cy="12" r="4"/>
+                <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/>
+              </svg>
+              Instagram
+            </a>
+            <a href="https://www.facebook.com/people/Kochattante-Kolayi/61561597810094/" class="social-link" aria-label="KoKo on Facebook" rel="noopener noreferrer" target="_blank">
+              <!-- Facebook icon -->
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+              </svg>
+              Facebook
+            </a>
+            <a href="https://www.youtube.com/@kochattantekolayi" class="social-link" aria-label="KoKo on YouTube" rel="noopener noreferrer" target="_blank">
+              <!-- YouTube icon -->
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.96-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/>
+                <polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="currentColor" stroke="none"/>
+              </svg>
+              YouTube
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       6. FOOTER
+  ══════════════════════════════════════════ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-inner">
+
+        <div class="footer-brand">
+          <div class="footer-logo">KoKo</div>
+          <p style="font-family:var(--font-body); font-size:0.85rem; color:rgba(255,255,255,0.55); margin-top:0.25rem; margin-bottom:1rem;">കൊച്ചട്ടന്റെ കൊളായി</p>
+          <p>
+            An agri-tourism experience rooted in the soil and stories of
+            Pustaka Gramam, Kerala.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="#about">The Farm</a></li>
+            <li><a href="#expect">Experiences</a></li>
+            <li><a href="#village">Village Life</a></li>
+            <li><a href="#location">Visit &amp; Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Find Us</h4>
+          <ul>
+            <li><a href="#location">Pustaka Gramam, Kottarakara</a></li>
+            <li><a href="#location">Kollam District, Kerala</a></li>
+            <li><a href="#location">Pin: 691531</a></li>
+          </ul>
+          <div class="social-links" style="margin-top:1rem; gap:0.6rem;">
+            <a href="https://www.instagram.com/kochattantekolayi/" class="social-link" style="padding:0.4rem 0.8rem; font-size:0.78rem;" aria-label="KoKo on Instagram" rel="noopener noreferrer" target="_blank">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/></svg>
+              IG
+            </a>
+            <a href="https://www.facebook.com/people/Kochattante-Kolayi/61561597810094/" class="social-link" style="padding:0.4rem 0.8rem; font-size:0.78rem;" aria-label="KoKo on Facebook" rel="noopener noreferrer" target="_blank">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+              FB
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2025–2026 Kochattante Kolayi. All rights reserved.</p>
+        <p>Made with <span class="heart" aria-label="love">♥</span> for the village of Pustaka Gramam.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./js/main.js"></script>
+</body>
+</html>
