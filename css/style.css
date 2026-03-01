@@ -60,7 +60,7 @@
   --sage:         #8fbc8f;
   --sage-light:   #b8d4b8;
   --sage-pale:    #e8f4e8;
-  --sage-dark:    #3d6b45;
+  --sage-dark:    #4a7d52;
   --sky:          #c8dff0;
   --sky-dark:     #7aaed0;
   --ochre:        #c8853a;
@@ -87,6 +87,16 @@
   --shadow-md:  0 6px 24px rgba(44,44,30,0.14);
   --shadow-lg:  0 12px 48px rgba(44,44,30,0.18);
   --transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ── Fixed page background (scroll colour transitions) ── */
+#page-bg {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background-color: #fdf8f0;
+  transition: background-color 0.9s cubic-bezier(0.4, 0, 0.2, 1);
+  pointer-events: none;
 }
 
 /* ── Reset & Base ── */
@@ -250,7 +260,6 @@ section { padding: 6rem 0; }
   position: relative;
   min-height: 100svh;
   overflow: hidden;
-  background-color: var(--cream);
 }
 
 /* Pencil sketch fills the right half of the viewport */
@@ -405,7 +414,8 @@ section { padding: 6rem 0; }
 
 /* ── ABOUT ── */
 .about {
-  background: linear-gradient(160deg, var(--sky) 0%, var(--cream) 100%);
+  background: none;
+  background-image: linear-gradient(160deg, rgba(200,223,240,0.35) 0%, transparent 55%);
   position: relative;
 }
 
@@ -484,7 +494,7 @@ section { padding: 6rem 0; }
 
 /* ── WHAT TO EXPECT ── */
 .expect {
-  background: var(--cream);
+  background: transparent;
   position: relative;
 }
 
@@ -575,7 +585,7 @@ section { padding: 6rem 0; }
 
 /* ── VILLAGE FEEL ── */
 .village {
-  background: var(--warm-cream);
+  background: transparent;
   position: relative;
   overflow: hidden;
 }
@@ -702,7 +712,8 @@ section { padding: 6rem 0; }
 
 /* ── LOCATION & CONTACT ── */
 .location {
-  background: linear-gradient(170deg, var(--sage-pale) 0%, var(--cream) 100%);
+  background: none;
+  background-image: linear-gradient(170deg, rgba(143,188,143,0.20) 0%, transparent 55%);
 }
 
 .location-inner {

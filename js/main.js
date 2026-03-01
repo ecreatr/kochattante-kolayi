@@ -36,6 +36,23 @@
     onScroll();
   }
 
+  /* ── Scroll background colour transitions ── */
+  const pageBg  = document.getElementById('page-bg');
+  const bgSects = Array.from(document.querySelectorAll('[data-bg]'));
+
+  if (pageBg && bgSects.length) {
+    function updatePageBg() {
+      const midY = window.scrollY + window.innerHeight * 0.5;
+      let active = bgSects[0];
+      for (const s of bgSects) {
+        if (s.offsetTop <= midY) active = s;
+      }
+      pageBg.style.backgroundColor = active.dataset.bg;
+    }
+    window.addEventListener('scroll', updatePageBg, { passive: true });
+    updatePageBg();
+  }
+
   /* ── Mobile hamburger toggle ── */
   const hamburger = document.getElementById('nav-hamburger');
   const navLinks  = document.getElementById('nav-links');
