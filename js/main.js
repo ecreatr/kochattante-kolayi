@@ -74,20 +74,6 @@
     });
   });
 
-  /* ── Simple contact form handler ── */
-  const form = document.getElementById('contact-form');
-  if (form) {
-    const msg = document.getElementById('form-success');
-    form.addEventListener('submit', (e) => {
-      e.preventDefault();
-      // Graceful no-op until backend/Formspree is wired up
-      if (msg) {
-        msg.hidden = false;
-        msg.scrollIntoView({ behavior: 'smooth', block: 'center' });
-      }
-      form.reset();
-    });
-  }
 
 
 })();

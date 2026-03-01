@@ -730,6 +730,20 @@ section { padding: 6rem 0; }
   display: block;
 }
 
+.gform-container {
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  border: 3px solid var(--white);
+}
+
+.gform-container iframe {
+  width: 100%;
+  height: 680px;
+  border: 0;
+  display: block;
+}
+
 .contact-form {
   display: flex;
   flex-direction: column;
