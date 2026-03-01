@@ -63,41 +63,42 @@
   ══════════════════════════════════════════ -->
   <section class="hero" id="hero" aria-label="Hero">
 
-    <!-- Topography texture background -->
-    <div class="hero-bg" role="presentation" aria-hidden="true"></div>
-    <div class="hero-overlay" role="presentation" aria-hidden="true"></div>
+    <!-- Full-bleed gate background -->
+    <div class="hero-gate-bg" role="presentation" aria-hidden="true"></div>
 
-    <div class="container">
-      <div class="hero-content">
+    <!-- Left-side cream wash — text zone -->
+    <div class="hero-vignette" role="presentation" aria-hidden="true"></div>
 
-        <!-- Text side -->
-        <div class="hero-text">
-          <h1 class="hero-koko-name">KoKo</h1>
-          <p class="hero-koko-full">Kochattante Kolayi</p>
-
-          <p class="hero-tagline-en">A living canvas of nature &amp; nostalgia, rooted in Kerala's timeless agricultural heritage.</p>
-
-          <div class="hero-location">
-            <!-- Pin icon -->
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
-              <circle cx="12" cy="10" r="3"/>
-            </svg>
-            Pustaka Gramam, Kottarakara, Kerala
-          </div>
-        </div>
-
-        <!-- Mascot side -->
-        <div class="hero-mascot">
-          <img
-            src="./img/kochattan-thumpsup.jpeg"
-            alt="Kochattan, our friendly village guide, giving a thumbs-up. He wears a white thorthu on his head and a blue checked lungi."
-            width="340"
-            height="340"
-          />
-        </div>
-
+    <!-- Text overlay — top-left -->
+    <div class="hero-overlay-content">
+      <div class="hero-badge">
+        <span class="hero-badge-dot" aria-hidden="true"></span>
+        Coming Soon
       </div>
+      <!-- Typographic lockup: "Ko" | "Ko" stacked above "Kochattante Kolayi" -->
+      <h1 class="sr-only">KoKo — Kochattante Kolayi</h1>
+      <div class="hero-koko-lockup" aria-hidden="true">
+        <span class="ko-a">Ko</span>
+        <div class="ko-b-wrap">
+          <span class="ko-b">Ko</span>
+          <span class="hero-koko-full">Kochattante Kolayi</span>
+        </div>
+      </div>
+      <p class="hero-tagline-en">A living canvas of nature &amp; nostalgia, rooted in Kerala's timeless agricultural heritage.</p>
+      <div class="hero-location">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+          <circle cx="12" cy="10" r="3"/>
+        </svg>
+        Pustaka Gramam, Kottarakara, Kerala
+      </div>
+    </div>
+
+    <!-- Scroll hint chevron -->
+    <div class="hero-scroll-hint" aria-hidden="true">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="6 9 12 15 18 9"/>
+      </svg>
     </div>
 
     <!-- Wavy divider -->
