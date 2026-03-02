@@ -35,6 +35,11 @@
   <meta property="og:type" content="website" />
   <title>KoKo — Kochattante Kolayi | Coming Soon</title>
   <link rel="stylesheet" href="./css/style.css" />
+  <!-- Preload hero background (LCP image) -->
+  <link rel="preload" as="image" href="./img/KoKo-entrace.jpeg" fetchpriority="high" />
+  <!-- DNS prefetch for Google embeds (loaded lazily below fold) -->
+  <link rel="dns-prefetch" href="https://www.google.com" />
+  <link rel="dns-prefetch" href="https://docs.google.com" />
   <!-- Inline SVG favicon -->
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%233d6b45'/><text y='.9em' font-size='72' x='10' fill='%23fdf8f0' font-family='serif' font-weight='bold'>K</text></svg>" />
 </head>
@@ -156,7 +161,7 @@
               alt="KoKo farm topography map showing the layout of Padavela pond, banana farms, papaya farm, pepper farm, cottage, and other features."
               loading="lazy"
               width="600"
-              height="450"
+              height="424"
             />
             <div class="about-map-caption">KoKo Farm Layout · Pustaka Gramam</div>
           </div>
@@ -165,6 +170,8 @@
               src="./img/kochattan.jpg"
               alt="Kochattan — our friendly village elder mascot — standing casually, wearing a blue checked lungi and white banian with a thorthu tied on his head."
               loading="lazy"
+              width="600"
+              height="800"
               style="max-height:280px; object-fit:contain; margin:0 auto;"
             />
           </div>
@@ -325,6 +332,8 @@
               src="./img/kochattan-cycling.png"
               alt="Kochattan cycling through the farm fields"
               loading="lazy"
+              width="128"
+              height="128"
             />
           </div>
           <h3>Cycling Tours</h3>
@@ -461,7 +470,7 @@
           alt="A beautiful pencil sketch of the KoKo farm entrance gate — rustic wooden posts with a thatched roof and the name 'KOCHATTANTE KOLAYI' carved on a wooden board."
           loading="lazy"
           width="700"
-          height="480"
+          height="467"
         />
         <div class="village-entrance-caption">
           The Gate That Welcomes You · Kochattante Kolayi
@@ -474,6 +483,8 @@
           src="./img/kochattan-thumpsup.jpeg"
           alt="Kochattan giving thumbs up"
           loading="lazy"
+          width="554"
+          height="554"
           style="max-height:160px; object-fit:contain;"
         />
         <blockquote>
