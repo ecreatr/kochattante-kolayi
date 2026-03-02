@@ -23,7 +23,7 @@
   ║      → https://www.zoho.com/sites                           ║
   ╚══════════════════════════════════════════════════════════════╝
 -->
-<html lang="en">
+<html lang="en-IN">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -31,8 +31,18 @@
   <meta name="keywords" content="KoKo, Kochattante Kolayi, agri-tourism, Kerala, Kottarakara, Pustaka Gramam, village experience, farm tourism" />
   <meta property="og:title" content="KoKo — Kochattante Kolayi | Coming Soon" />
   <meta property="og:description" content="A Kerala village agri-tourism experience opening in Pustaka Gramam, Kottarakara. Where village life blooms." />
-  <meta property="og:image" content="./img/kochattan-thumpsup.jpeg" />
+  <meta property="og:image" content="https://kochattan.in/img/kochattan-thumpsup.jpeg" />
   <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://kochattan.in/" />
+  <meta property="og:locale" content="en_IN" />
+  <meta property="og:site_name" content="KoKo — Kochattante Kolayi" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#3d6b45" />
+  <link rel="canonical" href="https://kochattan.in/" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="KoKo — Kochattante Kolayi | Coming Soon" />
+  <meta name="twitter:description" content="A Kerala village agri-tourism experience opening in Pustaka Gramam, Kottarakara. Where village life blooms." />
+  <meta name="twitter:image" content="https://kochattan.in/img/kochattan-thumpsup.jpeg" />
   <title>KoKo — Kochattante Kolayi | Coming Soon</title>
   <link rel="stylesheet" href="./css/style.css" />
   <!-- Preload hero background (LCP image) -->
@@ -42,6 +52,48 @@
   <link rel="dns-prefetch" href="https://docs.google.com" />
   <!-- Inline SVG favicon -->
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%233d6b45'/><text y='.9em' font-size='72' x='10' fill='%23fdf8f0' font-family='serif' font-weight='bold'>K</text></svg>" />
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TouristAttraction",
+    "name": "KoKo — Kochattante Kolayi",
+    "description": "An agri-tourism experience in Pustaka Gramam village, near Kottarakara, Kerala. Village walks, farm-to-table cooking, craft workshops, nature trails and seasonal harvests.",
+    "url": "https://kochattan.in/",
+    "image": "https://kochattan.in/img/kochattan-thumpsup.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Pustaka Gramam, Kottarakara",
+      "addressRegion": "Kerala",
+      "postalCode": "691531",
+      "addressCountry": "IN"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 9.0059,
+      "longitude": 76.8582
+    },
+    "sameAs": [
+      "https://www.instagram.com/kochattantekolayi/",
+      "https://www.facebook.com/people/Kochattante-Kolayi/61561597810094/",
+      "https://www.youtube.com/@kochattantekolayi"
+    ]
+  }
+  </script>
+  <!--
+    Google Analytics (GA4)
+    To activate:
+    1. Go to https://analytics.google.com → create account + property for kochattan.in
+    2. Admin → Data Streams → Web → copy your Measurement ID (starts with G-)
+    3. Replace G-L2GMT0NZ9S below with your actual Measurement ID
+  -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-L2GMT0NZ9S"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-L2GMT0NZ9S');
+  </script>
 </head>
 <body>
 
@@ -64,6 +116,8 @@
       </button>
     </div>
   </nav>
+
+  <main>
 
   <!-- ══════════════════════════════════════════
        1. HERO
@@ -590,6 +644,8 @@
       </div>
     </div>
   </section>
+
+  </main>
 
   <!-- ══════════════════════════════════════════
        6. FOOTER
