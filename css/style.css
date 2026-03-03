@@ -498,13 +498,6 @@ section { padding: 6rem 0; }
   position: relative;
 }
 
-.expect::before {
-  content: '';
-  position: absolute;
-  top: 0; left: 0; right: 0;
-  height: 6px;
-  background: linear-gradient(90deg, var(--sage), var(--sky-dark), var(--ochre), var(--terracotta));
-}
 
 .expect-header { text-align: center; margin-bottom: 3.5rem; }
 
@@ -590,13 +583,6 @@ section { padding: 6rem 0; }
   overflow: hidden;
 }
 
-.village::after {
-  content: '';
-  position: absolute;
-  bottom: 0; left: 0; right: 0;
-  height: 4px;
-  background: linear-gradient(90deg, var(--terracotta), var(--ochre), var(--terracotta));
-}
 
 .village-header { text-align: center; margin-bottom: 3.5rem; }
 .village-header .section-subtitle { margin: 0 auto 2.5rem; }
@@ -631,9 +617,10 @@ section { padding: 6rem 0; }
 }
 
 .village-card-icon {
-  padding: 2rem 1.5rem 1rem;
-  font-size: 2.5rem;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem 1.5rem 1rem;
   background: linear-gradient(135deg, var(--warm-cream), var(--sage-pale));
 }
 
@@ -686,7 +673,7 @@ section { padding: 6rem 0; }
   background: var(--white);
   border-radius: var(--radius-md);
   border: 2px dashed var(--ochre-light);
-  max-width: 320px;
+  max-width: 540px;
   margin: 3rem auto 0;
 }
 
@@ -1062,8 +1049,139 @@ html { scroll-padding-top: 72px; }
 }
 
 
+/* ── Active states for touch devices ── */
+.icon-card:active {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+}
+
+.village-card:active {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+/* ── Iframe loading placeholders ── */
+.map-container, .gform-container {
+  background: var(--sage-pale);
+}
+
+/* ── Hero tablet contrast ── */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .hero-vignette {
+    background: linear-gradient(to right,
+      rgba(253,248,240,0.97) 0%,
+      rgba(253,248,240,0.95) 42%,
+      rgba(253,248,240,0.70) 60%,
+      rgba(253,248,240,0.25) 78%,
+      transparent 90%);
+  }
+}
+
+.hero-tagline-en {
+  text-shadow: 0 1px 3px rgba(253,248,240,0.6);
+}
+
+.hero-location {
+  text-shadow: 0 1px 2px rgba(253,248,240,0.5);
+}
+
+/* ── Inline style replacements ── */
+.about-body-text {
+  color: var(--text-medium);
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.8;
+}
+
+.about-body-text:last-of-type {
+  margin-bottom: 2rem;
+}
+
+.location-header {
+  margin-bottom: 3rem;
+}
+
+.location-header .section-subtitle {
+  margin: 0 auto;
+}
+
+.map-caption {
+  font-size: 0.82rem;
+  color: var(--text-light);
+  margin-top: 0.75rem;
+  text-align: center;
+}
+
+.contact-heading {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  color: var(--ochre);
+  margin-bottom: 0.5rem;
+}
+
+.contact-subtext {
+  font-size: 0.9rem;
+  color: var(--text-medium);
+  margin-bottom: 1.5rem;
+}
+
+.footer-subtitle {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.55);
+  margin-top: 0.25rem;
+  margin-bottom: 1rem;
+}
+
+.footer-social {
+  margin-top: 1rem;
+  gap: 0.6rem;
+}
+
+.social-link-sm {
+  padding: 0.4rem 0.8rem;
+  font-size: 0.78rem;
+}
+
+/* ── Village card icon SVG sizing ── */
+.village-card-icon svg {
+  width: 48px;
+  height: 48px;
+}
+
+/* ── Kochattan quote box — horizontal on desktop ── */
+@media (min-width: 600px) {
+  .village-kochattan {
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+    gap: 1.5rem;
+  }
+
+  .village-kochattan img {
+    flex-shrink: 0;
+    width: 120px;
+    max-height: 120px;
+  }
+
+  .village-kochattan blockquote {
+    text-align: left;
+    flex: 1;
+  }
+}
+
 /* ── Print ── */
 @media print {
   .site-nav, .ribbon-wrap { display: none; }
   section { padding: 2rem 0; }
+}
+
+/* ── Reduced motion ── */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  .reveal { opacity: 1; transform: none; }
 }
