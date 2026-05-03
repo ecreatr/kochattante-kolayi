@@ -47,6 +47,9 @@
   <link rel="stylesheet" href="./css/style.css" />
   <!-- Preload hero background (LCP image) -->
   <link rel="preload" as="image" href="./img/KoKo-entrace.jpeg" fetchpriority="high" />
+  <!-- Preconnect for GA4 (early connection to analytics host) -->
+  <link rel="preconnect" href="https://www.googletagmanager.com" />
+  <link rel="preconnect" href="https://www.google-analytics.com" />
   <!-- DNS prefetch for Google embeds (loaded lazily below fold) -->
   <link rel="dns-prefetch" href="https://www.google.com" />
   <link rel="dns-prefetch" href="https://docs.google.com" />
@@ -142,7 +145,7 @@
         <span class="ko-a">Ko</span>
         <div class="ko-b-wrap">
           <span class="ko-b">Ko</span>
-          <span class="hero-koko-full">കൊച്ചാട്ടന്റെ കൊലായി</span>
+          <span class="hero-koko-full" lang="ml">കൊച്ചാട്ടന്റെ കൊലായി</span>
         </div>
       </div>
       <p class="hero-tagline-en">Touch the soil. Taste the tradition. Treasure the memories.</p>
@@ -744,7 +747,7 @@
 
         <div class="footer-brand">
           <div class="footer-logo">KoKo</div>
-          <p class="footer-subtitle">കൊച്ചാട്ടന്റെ കൊലായി</p>
+          <p class="footer-subtitle" lang="ml">കൊച്ചാട്ടന്റെ കൊലായി</p>
           <p>
             Touch the soil. Taste the tradition. Treasure the memories.
           </p>
@@ -775,6 +778,10 @@
             <a href="https://www.facebook.com/people/Kochattante-Kolayi/61561597810094/" class="social-link social-link-sm" aria-label="KoKo on Facebook" rel="noopener noreferrer" target="_blank">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
               FB
+            </a>
+            <a href="https://www.youtube.com/@kochattantekolayi" class="social-link social-link-sm" aria-label="KoKo on YouTube" rel="noopener noreferrer" target="_blank">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.96-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="currentColor" stroke="none"/></svg>
+              YT
             </a>
           </div>
         </div>

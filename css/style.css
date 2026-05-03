@@ -178,21 +178,6 @@ section { padding: 6rem 0; }
   to   { opacity: 1; }
 }
 
-@keyframes slideRight {
-  from { opacity: 0; transform: translateX(-32px); }
-  to   { opacity: 1; transform: translateX(0); }
-}
-
-@keyframes slideLeft {
-  from { opacity: 0; transform: translateX(32px); }
-  to   { opacity: 1; transform: translateX(0); }
-}
-
-@keyframes floatBob {
-  0%, 100% { transform: translateY(0); }
-  50%       { transform: translateY(-10px); }
-}
-
 
 .reveal {
   opacity: 0;
@@ -470,17 +455,6 @@ section { padding: 6rem 0; }
   border-top: 1px solid var(--border);
 }
 
-.about-entrance-card {
-  border-radius: var(--radius-md);
-  overflow: hidden;
-  box-shadow: var(--shadow-md);
-}
-
-.about-entrance-card img {
-  width: 100%;
-  object-fit: cover;
-  filter: sepia(0.15) contrast(1.05);
-}
 
 .about-mascot-lean {
   position: relative;
@@ -743,65 +717,6 @@ section { padding: 6rem 0; }
   display: block;
 }
 
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  gap: 1.1rem;
-}
-
-.form-group label {
-  display: block;
-  font-size: 0.85rem;
-  font-weight: 600;
-  color: var(--text-medium);
-  margin-bottom: 0.35rem;
-  letter-spacing: 0.04em;
-}
-
-.form-group input,
-.form-group textarea,
-.form-group select {
-  width: 100%;
-  padding: 0.75rem 1rem;
-  border: 1.5px solid var(--border);
-  border-radius: var(--radius-sm);
-  font-family: var(--font-body);
-  font-size: 0.95rem;
-  color: var(--text-dark);
-  background: var(--white);
-  transition: border-color var(--transition), box-shadow var(--transition);
-  outline: none;
-}
-
-.form-group input:focus,
-.form-group textarea:focus,
-.form-group select:focus {
-  border-color: var(--sage);
-  box-shadow: 0 0 0 3px rgba(143,188,143,0.25);
-}
-
-.form-group textarea { min-height: 110px; resize: vertical; }
-
-.btn-submit {
-  background: var(--ochre);
-  color: var(--white);
-  border: none;
-  padding: 0.85rem 2.2rem;
-  border-radius: 50px;
-  font-family: var(--font-body);
-  font-size: 1rem;
-  font-weight: 700;
-  cursor: pointer;
-  transition: background var(--transition), transform var(--transition), box-shadow var(--transition);
-  box-shadow: var(--shadow-sm);
-  align-self: flex-start;
-}
-
-.btn-submit:hover {
-  background: var(--terracotta);
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-md);
-}
 
 .social-links {
   display: flex;
@@ -1044,7 +959,6 @@ html { scroll-padding-top: 72px; }
 
 /* ── Location form on mobile ── */
 @media (max-width: 767px) {
-  .btn-submit { width: 100%; text-align: center; }
   .gform-container iframe { height: 900px; }
 }
 
@@ -1172,7 +1086,7 @@ html { scroll-padding-top: 72px; }
 
 /* ── Print ── */
 @media print {
-  .site-nav, .ribbon-wrap { display: none; }
+  .site-nav { display: none; }
   section { padding: 2rem 0; }
 }
 
