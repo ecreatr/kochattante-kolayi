@@ -532,11 +532,12 @@ section { padding: 6rem 0; }
   transition: transform 0.25s cubic-bezier(0.34,1.56,0.64,1), background 0.25s ease, box-shadow 0.25s ease;
 }
 
-/* enlarge touch target without changing visual size */
+/* modest touch padding — kept small so neighbouring markers
+   don't overlap and steal taps on the compact mobile map */
 .map-marker::after {
   content: "";
   position: absolute;
-  inset: -8px;
+  inset: -3px;
   border-radius: 50%;
 }
 
@@ -544,6 +545,7 @@ section { padding: 6rem 0; }
 .map-marker:focus-visible {
   transform: translate(-50%, -50%) scale(1.18);
   background: var(--terracotta);
+  z-index: 3;
 }
 
 .map-marker[aria-pressed="true"] {
