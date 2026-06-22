@@ -91,6 +91,54 @@
     });
   });
 
+  /* ── Interactive spots map ──
+     Two-way sync between map markers and spot cards.
+     Progressive enhancement: with JS off, the map image and every
+     spot card (names, couplets, story links) remain fully readable. */
+  const spotsSection = document.getElementById('spots');
+  if (spotsSection) {
+    const markers = Array.from(spotsSection.querySelectorAll('.map-marker'));
+    const cards   = Array.from(spotsSection.querySelectorAll('.spot-card'));
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
+    const cardFor   = (key) => spotsSection.querySelector('.spot-card[data-spot="' + key + '"]');
+    const markerFor = (key) => spotsSection.querySelector('.map-marker[data-spot="' + key + '"]');
+
+    let activeKey = null;
+
+    function clearActive() {
+      if (!activeKey) return;
+      const card = cardFor(activeKey);
+      const marker = markerFor(activeKey);
+      if (card) card.classList.remove('active');
+      if (marker) marker.setAttribute('aria-pressed', 'false');
+      activeKey = null;
+    }
+
+    function setActive(key, scroll) {
+      if (activeKey === key) { clearActive(); return; } // re-tap toggles off
+      clearActive();
+      const card = cardFor(key);
+      const marker = markerFor(key);
+      if (!card) return;
+      activeKey = key;
+      card.classList.add('active');
+      if (marker) marker.setAttribute('aria-pressed', 'true');
+      if (scroll) {
+        card.scrollIntoView({ behavior: reduceMotion ? 'instant' : 'smooth', block: 'center' });
+      }
+    }
+
+    markers.forEach((m) => {
+      m.addEventListener('click', () => setActive(m.dataset.spot, true));
+    });
+
+    cards.forEach((c) => {
+      c.addEventListener('click', (e) => {
+        if (e.target.closest('a')) return; // let "Read the story" links work
+        setActive(c.dataset.spot, false);
+      });
+    });
+  }
 
 })();
